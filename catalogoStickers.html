@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stickers Planet</title>
-    <link rel="icon" href="/img/favicon.png">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header >
-      <div>
+    <header class="main_header">
+      <div class="main_header_titulo">
         <h1>Sticker Planet</h1>
       </div>
       <nav>
-        <ul>
+        <ul class="main_header_nav">
           <li>
             <a href="./index.html">Inicio</a>
           </li>
           <li>
-            <a href="../nosotros.html">Nosotros</a>
+            <a href="./nosotros.html">Nosotros</a>
           </li>
           <li>
             <p class="nav_productos">Productos</p>
             <ul>
-              <li><a href="../catalogoStickers.html">Stickers</a></li>
-              <li><a href="../catalogoPosters.html">Posters</a></li>
+              <li><a href="./catalogoStickers.html">Stickers</a></li>
+              <li><a href="./catalogoPosters.html">Posters</a></li>
             </ul>
           </li>
           <li>
-            <a href="../consulta.html">consulta</a>
+            <a href="./consulta.html">consulta</a>
           </li>
           <li>
             <a class="nav_ig"
@@ -37,7 +37,7 @@
               target="_blank"
             >
               <img
-                src="../img/instagraM.svg"
+                src="./img/instagraM.svg"
                 alt="Logo instagram"
                 width="40"
                 height="40"
@@ -47,44 +47,30 @@
         </ul>
       </nav>
     </header>
-    <hr>
-    <main>
-      <section>
-        <div>
-        <!--Hacer transiciones catalogo-->
-          <ul>
-            <li><img src="/img/catalogo mascotas/caratula mascotas.png" alt="Caratula catalogo mascotas" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/1.png" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-2.png" alt="Caratula catalogo mascotas 1" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-3.png" alt="Caratula catalogo mascotas 2" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-4.png" alt="Caratula catalogo mascotas 3" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-5.png" alt="Caratula catalogo mascotas 4" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-6.png" alt="Caratula catalogo mascotas 5" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-7.png" alt="Caratula catalogo mascotas 6" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-8.png" alt="Caratula catalogo mascotas 7" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-9.png" alt="Caratula catalogo mascotas 8" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-10.png" alt="Caratula catalogo mascotas 9" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-11.png" alt="Caratula catalogo mascotas 10" height="858" width="600"></li>
-            <li><img src="/img/catalogo mascotas/Bulldog Frances-12.png" alt="Caratula catalogo mascotas 11" height="858" width="600"></li>
-          </ul>
-        </div>
-      </section>
-      <section> 
-        <h2>STICKERS PERSONALIZADOS</h2>
-        <div>
-          <ul>
-            <il><img src="/img/personalizado1.jpg" alt="Pesonalizada1" height="400" width="400"></il>
-            <il><img src="/img/personalizado2.jpg" alt="Pesonalizada2" height="400" width="400"></il>
-            <il><img src="/img/personalizado3.jpg" alt="Pesonalizada3" height="400" width="400"></il>
-            <il><img src="/img/personalizado4.jpg" alt="Pesonalizada4" height="400" width="400"></il>
-            <il><img src="/img/personalizado5.jpg" alt="Pesonalizada5" height="400" width="400"></il>
-            <il><img src="/img/personalizado6.jpg" alt="Pesonalizada6" height="400" width="400"></il>
-          </ul>
-        </div> 
-      </section>
+    <main class="consulta_main">
+      <div class="conteiner">Dejanos tu mensaje</div>
+      <div class="formulario">
+        <form>
+          <div class="nombre"><label for="name"  >Nombre y Apellido</label></div>
+          <input type="text" name="name" placeholder="Nombre y Apellido" />
+          <label for="email" class="mail">Email</label>
+          <input type="email" name="email" placeholder="email" />
+          <label for="phone" class="telefono">Numero de telefono</label>
+          <input type="text" name="phone" placeholder="Numero de Telefono" />
+          <label for="consult" class="consulta">Consulta</label>
+          <textarea
+            name="consulta"
+            cols="30"
+            rows="10"
+            placeholder="coloque su consulta"
+          ></textarea>
+          <input type="submit" value="enviar consulta" />
+          <input type="reset" value="limpiar consulta" />
+        </form>
+      </div>
     </main>
     <footer>
-      <img src="../img/logo planet.png" alt="Logo" width="200" height="200"  class="logo"/>
+      <img src="./img/logo planet.png" alt="Logo" width="200" height="200"  class="logo"/>
       <section >
         <h2>Datos de contacto</h2>
           <li>351-3685230</li>
@@ -99,7 +85,7 @@
             target="_blank"
           >stickerplanetcba
             <img
-              src="../img/instagraM.svg"
+              src="./img/instagraM.svg"
               alt="Logo instagram"
               width="30"
               height="30"
