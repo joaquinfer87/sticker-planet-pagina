@@ -626,47 +626,52 @@ footer {
     background-color: #f3f4fd;
     width: 100vw;
   }
-
+  
   .main_nosotros {
     width: 100vw;
     background-image: url(../img/stars-svgrepo-com.svg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
+
+
 
   .nosotros_conocenos {
     padding: 0 25%;
     width: 50%;
-    display: grid;
-    grid-template-areas:
-      "title title"
-      "presentacion collage";
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    justify-items: center;
-    gap: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   .nosotros_conocenos_presentacion {
-    display: grid;
+    padding: 20px 0;
     color: #7947d6;
     font-family: "openSansbold";
     font-size: 20px;
-    grid-area: presentacion;
   }
 
   .nosotros_conocenos_imagen {
-    display: grid;
-    grid-area: collage;
     background-color: rgb(221, 246, 247);
     border-radius: 10px;
   }
-
+  
   .nosotros_conocenos h2 {
     color: #7947d6;
     font-family: "openSansbold";
     font-size: 50px;
-    grid-area: title;
   }
 
+  .clientes{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0;
+
+  }
   .clientes h2 {
     color: #7947d6;
     font-family: "openSansbold";
@@ -685,3 +690,162 @@ footer {
     display: flex;
     flex-direction: center;
   }
+
+  @media (min-width: 992px) {
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+      font-family: "retropix";
+      src: url(../fonts/retropix.otf);
+    }
+  
+    @font-face {
+      font-family: "openSansRegular";
+      src: url(../fonts/OpenSans-Regular.ttf);
+    }
+  
+    @font-face {
+      font-family: "openSansBold";
+      src: url(../fonts/OpenSans-Bold.ttf);
+      font-weight: bold;
+    }
+  
+    body {
+      width: 100vw;
+    }
+  
+    li {
+      list-style: none;
+    }
+
+    .main_header {
+      width: 100vw;
+      background-image: url(../img/nav\ fondo.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 200px auto;
+      justify-content: space-between;
+    }
+  
+    .main_header_titulo {
+      color: #ffff;
+      font-family: "retropix";
+      font-size: 20px;
+      width: 50vw;
+      display: inline;
+      text-align: start;
+    }
+  
+    .main_header a,
+    .main_header p {
+      color: white;
+      text-decoration: none;
+      font-family: "openSansRegular";
+      font-size: 30px;
+    }
+  
+    .main_header_nav {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      justify-self: start;
+      gap: 0 20px;
+      z-index: 1;
+      margin-right: 20px;
+    }
+  
+    .main_header_nav ul li {
+      display: none;
+      position: relative;
+      font-family: "openSansRegular";
+      font-size: 30px;
+    }
+    .main_header ul ul {
+      display: none;
+      position: absolute;
+    }
+  
+    .main_header ul ul li {
+      display: block;
+    }
+  
+    .main_header ul li:hover ul {
+      display: block;
+      background-color: #000000;
+    }
+
+    .main_nosotros {
+      width: 100vw;
+      background-image: url(../img/stars-svgrepo-com.svg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nosotros_conocenos {
+      padding: 0 25%;
+      width: 50%;
+      display: grid;
+      grid-template-areas:
+        "title title"
+        "presentacion collage";
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+      justify-items: center;
+      gap: 80px 40px;
+    }
+    .nosotros_conocenos_presentacion {
+      display: grid;
+      color: #7947d6;
+      font-family: "openSansbold";
+      font-size: 20px;
+      grid-area: presentacion;
+    }
+  
+    .nosotros_conocenos_imagen {
+      display: grid;
+      grid-area: collage;
+      background-color: rgb(221, 246, 247);
+      border-radius: 10px;
+    }
+  
+    .nosotros_conocenos h2 {
+      color: #7947d6;
+      font-family: "openSansbold";
+      font-size: 50px;
+      grid-area: title;
+    }
+    
+    .clientes{
+      width: 100vw;
+
+    }
+
+    .clientes h2 {
+      color: #7947d6;
+      font-family: "openSansbold";
+      font-size: 50px;
+    }
+  
+    .clientes_wrapper {
+      width: 50%;
+      padding: 0 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .clientes_imagen {
+      display: flex;
+      flex-direction: center;
+    }
+  }
+  
